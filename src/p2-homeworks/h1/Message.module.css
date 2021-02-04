@@ -1,0 +1,92 @@
+.outgoing {
+    text-align: right;
+}
+
+.incoming {
+    text-align: left;
+}
+
+.outgoing .container {
+    flex-direction: row-reverse;
+}
+
+.incoming .container {
+    flex-direction: row;
+}
+
+.container {
+    display: inline-flex;
+    font-size: 16px;
+    padding: 0.31em;
+    background: #B5E80E;
+    width: 18.750em;
+    margin: 0.313em;
+    max-width: 14.44em;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 0.31em;
+    background-color: #000000;
+    border: 0.063em solid #000000;
+
+    text-align: left;
+}
+.outgoing .message{
+    border-radius: 0.62em 0.62em 0 0.62em;
+}
+.incoming .message{
+    border-radius: 0.62em 0.62em  0.62em 0;
+}
+
+.message:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 1.9em solid #000;
+    bottom: -0.063em;
+}
+
+.outgoing .message:after {
+    right: -1.625em;
+    border-right: 1.9em solid transparent;
+}
+
+.incoming .message:after {
+    left: -1.625em;
+    border-left: 1.9em solid transparent;
+}
+
+.avatar {
+    align-self: flex-end;
+    position: relative;
+    width: 3.125em;
+    height: 3.125em;
+    vertical-align: middle;
+    z-index: 999;
+    bottom: -0.43em;
+    border-radius: 50%;
+    border: 0.73em solid #B5E80E;
+}
+
+.name {
+    color: #9794C0;
+    font-size: 1.2em;
+}
+
+.text {
+    font-size: .9em;
+    color: #9AAA98;
+}
+
+.time {
+    align-self: flex-end;
+    font-size: 1em;
+    color: #1A4313;
+}
