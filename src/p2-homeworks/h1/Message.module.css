@@ -37,11 +37,13 @@
 
     text-align: left;
 }
-.outgoing .message{
+
+.outgoing .message {
     border-radius: 0.62em 0.62em 0 0.62em;
 }
-.incoming .message{
-    border-radius: 0.62em 0.62em  0.62em 0;
+
+.incoming .message {
+    border-radius: 0.62em 0.62em 0.62em 0;
 }
 
 .message:after {
