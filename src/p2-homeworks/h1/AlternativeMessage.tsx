@@ -11,7 +11,7 @@ const messageData = {
 
 function AlternativeMessage() {
     return (
-        <div>
+        <>
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
@@ -19,7 +19,7 @@ function AlternativeMessage() {
                 time={messageData.time}
                 isIncoming={false}
             />
-        </div>
+        </>
     )
 }
 
